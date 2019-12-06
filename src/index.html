@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <main class="l-container">
+      <form class="c-form" id="form" novalidate>
+        <h3>Super Awesome Form</h3>
+        <ul class="c-form__errors is-hidden"></ul>
+        <input
+          type="email"
+          id="email"
+          class="c-form__input"
+          placeholder="Email"
+        />
+        <input
+          type="email"
+          id="email-confirmation"
+          class="c-form__input"
+          placeholder="Email confirmation"
+        />
+        <input
+          type="text"
+          id="country"
+          class="c-form__input"
+          placeholder="Country"
+        />
+        <input
+          type="text"
+          id="zip-code"
+          class="c-form__input"
+          placeholder="Zip code"
+        />
+        <input
+          type="password"
+          id="password"
+          class="c-form__input"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          id="password-confirmation"
+          class="c-form__input"
+          placeholder="Password confirmation"
+        />
+        <button type="submit" id="submit-btn" class="c-form__submit">
+          Submit Form
+        </button>
+      </form>
+    </main>
+  </body>
 </html>
